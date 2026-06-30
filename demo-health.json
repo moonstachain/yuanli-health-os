@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "owner": "Demo User",
+    "version": "public-demo",
+    "privacy": "Synthetic demo data only. Do not commit real health data to public repositories."
+  },
+  "profile": {
+    "birthYear": 1980,
+    "heightCm": 178,
+    "primaryGoal": "metabolic repair + sleep stability + Zone2 base"
+  },
+  "daily": [],
+  "observations": [],
+  "experiments": [
+    {
+      "name": "饭后轻走 20 分钟",
+      "durationDays": 14,
+      "hypothesis": "改善睡眠、次日体重和餐后代谢"
+    }
+  ]
+}
