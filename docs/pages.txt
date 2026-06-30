@@ -1,5 +1,0 @@
-Pages setup
-
-Settings Pages
-Deploy from branch
-main root
