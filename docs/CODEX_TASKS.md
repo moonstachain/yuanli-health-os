@@ -1,17 +1,25 @@
 # Codex Tasks
 
-## T1 Interface
+## T1 Public/private separation
 
-Improve the desktop HTML UI while keeping the main interface user-facing.
+Keep public demo data separate from private raw exports and reports.
 
-## T2 Data
+## T2 Apple data importer
 
-Add a local data loader and keep private files outside the public repo.
+Create a script that reads a local export zip, normalizes movement and recovery fields, and writes an aggregated JSON summary. Exclude GPS route data from public outputs.
 
-## T3 Agent
+## T3 Agent core
 
-Implement scoring, daily brief, Zone2 plan, sleep plan, weekly review, and experiment loop.
+Implement scoring functions for movement base, Zone2 adherence, sleep stability, recovery trend, metabolic priority, daily brief, weekly review, and missing-data queue.
 
-## T4 Docs
+## T4 Desktop UI v2
 
-Keep strategy, pages setup, and schema notes aligned with the public demo.
+Make `app.html` read `data/demo-health.json` dynamically. Keep the main interface user-facing and hide developer blocks.
+
+## T5 Experiments
+
+Add a 14-day experiment tracker for dinner walk, steps floor, sleep anchor, Zone2 cadence, and alcohol-free cycle.
+
+## T6 Doctor pack
+
+Generate a printable 90-day summary for doctor communication and next-check planning.
