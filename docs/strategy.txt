@@ -1,0 +1,5 @@
+Yuanli OS strategy
+
+Public shell.
+Desktop demo.
+Local private data later.
