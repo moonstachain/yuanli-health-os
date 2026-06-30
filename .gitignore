@@ -11,3 +11,7 @@ apple-health-export/
 *.zip
 *.db
 *.sqlite
+*.sqlite3
+*.pdf
+*.xlsx
+*.csv
