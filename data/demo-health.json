@@ -1,1 +1,86 @@
-{"version":"0.1","readiness":72,"recovery":68,"rhythm":61,"movement":74}
+{
+  "meta": {
+    "schemaVersion": "yuanli-health-os.v2",
+    "updatedAt": "2026-06-29",
+    "visibility": "public-minimized",
+    "note": "Aggregated Apple Health + exam/lab summary only. Raw GPS, raw daily records and personal identifiers are intentionally excluded from this public file."
+  },
+  "appleHealth": {
+    "source": "HealthAutoExport_20260629160159.zip",
+    "range": {
+      "start": "2026-03-31",
+      "end": "2026-06-29",
+      "days": 91
+    },
+    "dataQuality": {
+      "movement": "good: steps, distance and walking metrics cover almost all days",
+      "recovery": "partial: resting heart rate and HRV cover most days; sleep duration has only 3 usable days",
+      "sleep": "insufficient: sleep stage data is not reliable in this export",
+      "bodyComposition": "missing: Apple export has no weight/body-fat records",
+      "location": "excluded: route/GPS files are not synchronized to public repo"
+    },
+    "metrics": {
+      "steps": {"days": 91, "avg": 4619.68, "median": 4458.0, "min": 164.0, "max": 10523.0, "first30Avg": 5050.11, "last30Avg": 3889.9, "last7Avg": 2709.43},
+      "distanceKm": {"days": 91, "avg": 3.05, "median": 2.94, "min": 0.12, "max": 8.76, "first30Avg": 3.46, "last30Avg": 2.52, "last7Avg": 1.75},
+      "activeEnergyKcal": {"days": 72, "avg": 252.83, "median": 230.57, "min": 10.19, "max": 618.79, "first30Avg": 257.65, "last30Avg": 227.75, "last7Avg": 151.43},
+      "exerciseMinutes": {"days": 60, "avg": 4.92, "median": 2.0, "min": 1.0, "max": 37.0, "first30Avg": 11.31, "last30Avg": 2.26, "last7Avg": 2.0},
+      "standHours": {"days": 72, "avg": 8.36, "median": 8.0, "min": 1.0, "max": 16.0, "first30Avg": 8.33, "last30Avg": 7.8, "last7Avg": 6.0},
+      "restingHeartRate": {"days": 65, "avg": 71.32, "median": 71.0, "min": 63.0, "max": 97.0, "first30Avg": 74.13, "last30Avg": 68.86, "last7Avg": 69.14},
+      "hrvMs": {"days": 67, "avg": 32.84, "median": 32.2, "min": 17.31, "max": 60.17, "first30Avg": 30.81, "last30Avg": 34.55, "last7Avg": 41.01},
+      "heartRateAvg": {"days": 69, "avg": 84.98, "median": 84.19, "min": 71.89, "max": 104.81, "first30Avg": 87.89, "last30Avg": 83.13, "last7Avg": 84.42},
+      "walkingHeartRateAvg": {"days": 59, "avg": 95.54, "median": 95.0, "min": 80.0, "max": 119.0, "first30Avg": 97.32, "last30Avg": 92.84, "last7Avg": 96.14},
+      "vo2Max": {"days": 5, "avg": 29.59, "median": 29.61, "min": 29.21, "max": 30.06, "first30Avg": 29.59, "last30Avg": null, "last7Avg": null},
+      "spo2": {"days": 63, "avg": 96.83, "median": 97.0, "min": 89.0, "max": 99.0, "first30Avg": 96.64, "last30Avg": 97.1, "last7Avg": 97.84},
+      "respiratoryRate": {"days": 7, "avg": 19.73, "median": 19.25, "min": 17.6, "max": 23.5, "first30Avg": 17.6, "last30Avg": 20.44, "last7Avg": null},
+      "sleepDurationHours": {"days": 3, "avg": 0.88, "median": 0.86, "min": 0.53, "max": 1.25, "first30Avg": 0.7, "last30Avg": 1.25, "last7Avg": null}
+    },
+    "thresholdCounts": {
+      "daysWithSteps": 91,
+      "daysStepsGte8000": 6,
+      "daysStepsGte10000": 1,
+      "daysStepsLt3000": 21,
+      "daysExerciseGte30Min": 1,
+      "daysStandGte10h": 27
+    },
+    "monthly": [
+      {"month": "2026-03", "days": 1, "stepsAvg": 4447.0, "distanceKmAvg": 3.09, "activeKcalAvg": 489.0, "exerciseMinAvg": 8.0, "restingHrAvg": 72.0, "hrvAvg": 31.8},
+      {"month": "2026-04", "days": 30, "stepsAvg": 5099.0, "distanceKmAvg": 3.48, "activeKcalAvg": 244.0, "exerciseMinAvg": 11.5, "restingHrAvg": 74.3, "hrvAvg": 30.7},
+      {"month": "2026-05", "days": 31, "stepsAvg": 4902.0, "distanceKmAvg": 3.18, "activeKcalAvg": 283.0, "exerciseMinAvg": 2.9, "restingHrAvg": 72.5, "hrvAvg": 32.0},
+      {"month": "2026-06", "days": 29, "stepsAvg": 3829.0, "distanceKmAvg": 2.48, "activeKcalAvg": 224.0, "exerciseMinAvg": 2.3, "restingHrAvg": 68.9, "hrvAvg": 34.6}
+    ],
+    "workouts": [
+      {"type": "outdoor_walk", "start": "2026-04-05 16:54", "duration": "01:16:12", "distanceKm": 5.89, "avgHeartRate": 97.1, "maxHeartRate": 121.0, "activeKj": 761.6}
+    ]
+  },
+  "clinicalBaseline": {
+    "2025-03-06": {
+      "heightCm": 177.5,
+      "weightKg": 87.3,
+      "bmi": 27.7,
+      "waistCm": 103,
+      "hipCm": 113,
+      "waistHipRatio": 0.91,
+      "bloodPressureMmHg": "115/69",
+      "pulseBpm": 76,
+      "fattyLiver": "mild ultrasound image",
+      "thyroid": "multiple bilateral nodules with calcification, C-TIRADS 3",
+      "labs": {"ALT": 101.3, "AST": 47.0, "GGT": 43.2, "TC": 5.98, "TG": 2.45, "UA": 486.0, "Creatinine": 94.0, "FastingGlucose": 6.87, "Platelets": 188}
+    },
+    "2026-02-20": {
+      "labs": {"ALT": 75, "AST": 44, "AST_ALT_Ratio": 0.59, "ALP": 95, "GGT": 41, "Albumin": 44.1, "TotalBilirubin": 18.4}
+    }
+  },
+  "agentScores": {
+    "movementBase": 58,
+    "zone2Adherence": 18,
+    "sleepDataReadiness": 20,
+    "recoveryTrend": 66,
+    "metabolicRiskPriority": "P0",
+    "overallAgentState": "yellow: data foundation is forming, but movement volume and sleep tracking are the first bottlenecks"
+  },
+  "nextProtocol": {
+    "p0": ["Build 90-day daily baseline", "Increase walking to 6500-8000 steps/day", "Start Zone2 3x/week", "Fix sleep tracking and sleep anchor"],
+    "zone2": {"weeklyTargetMinutes": 120, "sessionPlan": ["Tue 35-40m", "Thu 35-40m", "Sat 45-60m"], "heartRateStartBpm": "108-122", "rpe": "4-5/10"},
+    "sleep": {"bedWindow": "23:15-23:45", "wakeWindow": "07:00-07:30", "minimumTrackDaysPerWeek": 5}
+  }
+}
